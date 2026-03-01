@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-M7FMHZGS');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="utf-8">
+  <meta name="description" content="The Official Website for CMU-VLN.">
+  <meta name="keywords" content="Vision-Language Navigation, Object Navigation, Embodied AI">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CMU-VLN: The official webpage for Vision-Language Navigation Project in Zhang Lab in CMU.</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/cmu_ri.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7FMHZGS" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-desktop is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title" style="line-height: 1.3;">SysNav: Multi-Level Systematic Cooperation Enables Real-World, Cross-Embodiment Object Navigation</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-desktop is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="content">
+              <div class="text-image-container title is-3"
+                style="display: flex; align-items: center; justify-content: center;">
+                <img src="static/images/light-bulb.png" alt="示例图片" width="45" style="margin-right: 10px;">
+                <p style="margin: 0;">Contributions</p>
+              </div>
+              <ul>
+                <li style="text-align: left; margin-bottom: 15px;"><b>We propose a cross-embodiment system—supporting wheeled robots, quadrupeds, and humanoids—that incrementally builds a multi-layer representation of the environment, including room, viewpoint, and object layers, enabling the VLM to make more informed decisions during the object navigation.</b></li>
+                <li style="text-align: left; margin-bottom: 15px;"><b>We design an efficient two-stage navigation policy
+                    based on this representation, combining high-level planning guided by the VLM's reasoning and
+                    low-level exploration with VLM's assistance.</b></li>
+                <li style="text-align: left; margin-bottom: 15px;"><b>Our system not only supports standard object navigation but also enables conditional object navigation—such as navigation conditioned on object attributes or spatial relations—through its multi-layer representation.</b></li>
+                <li style="text-align: left; margin-bottom: 0px;"><b>We conduct extensive real-world evaluations, including three long-range tests spanning an entire building floor and 75 unit tests conducted within multi-room environments (51 on wheeled robots, 18 on quadrupeds and 6 on humannoids).
+                </b></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <!-- Paper video carousel. -->
+        <div class="columns is-desktop is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-3">
+              <img src="static/images/wheel robot.png" alt="Wheeled Robot" style="height: 1.3em; vertical-align: text-bottom; margin-right: 0.3rem; display: inline-block;"> Wheeled Robot: <span style="color: #5cb85c; font-weight: 700;">Long-range</span> <span style="color: #f39c12; font-weight: 700;">Object Navigation</span>
+            </h2>
+            
+            <!-- Simple video carousel container -->
+            <div class="simple-video-carousel">
+              <!-- Video slides -->
+              <div class="video-slides">
+                <div class="video-slide active">
+                  <div class="publication-video">
+                    <iframe id="youtube-player-1" src="https://www.youtube.com/embed/FpF6IATXWds?si=dLfWSKkIdRWqF4bq" frameborder="0"
+                      allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                  <!-- Storyboard/Thumbnail Section -->
+                  <div class="video-storyboard">
+                    <div class="storyboard-title">Key Moments <span class="storyboard-subtitle">- Click image to jump • Click 🔍 to zoom</span></div>
+                    <div class="storyboard-frames">
+                      <div class="storyboard-frame">
+                        <img src="static/images/storyboard/roboloundge/rgb/00:07.png" alt="Frame 1">
+                        <span class="frame-time">0:07</span>
+                        <div class="frame-description">Robot finds a refrigerator, but not in a loundge, continues.</div>
+                      </div>
+                      <div class="storyboard-frame">
+                        <img src="static/images/storyboard/roboloundge/rgb/00:21.png" alt="Frame 2">
+                        <span class="frame-time">0:21</span>
+                        <div class="frame-description">Robot transits to the next room selected by the VLM.</div>
+                      </div>
+                      <div class="storyboard-frame">
+                        <img src="static/images/storyboard/roboloundge/rgb/00:40.png" alt="Frame 3">
+                        <span class="frame-time">0:40</span>
+                        <div class="frame-description">Robot transits to the next room selected by the VLM.</div>
+                      </div>
+                      <div class="storyboard-frame">
+                        <img src="static/images/storyboard/roboloundge/rgb/01:18.png" alt="Frame 4">
+                        <span class="frame-time">1:18</span>
+                        <div class="frame-description">Robot finds the refrigerator in the loundge, completes.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="video-slide">
+                  <div class="publication-video">
+                    <iframe id="youtube-player-2" src="https://www.youtube.com/embed/GqRUvwAEqc8?si=FrBSZsPntMdpLs2n" frameborder="0"
+                      allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                  <!-- Storyboard/Thumbnail Section -->
+                  <div class="video-storyboard">
+                    <div class="storyboard-title">Key Moments <span class="storyboard-subtitle">- Click image to jump • Click 🔍 to zoom</span></div>
+                    <div class="storyboard-frames">
+                      <div class="storyboard-frame">
+                        <img src="static/images/storyboard/gates_4th/rgb/00:16.png" alt="Frame 1">
+                        <span class="frame-time">0:16</span>
+                        <div class="frame-description">Robot transits to the next room selected by the VLM.</div>
+                      </div>
+                      <div class="storyboard-frame">
+                        <img src="static/images/storyboard/gates_4th/rgb/00:48.png" alt="Frame 2">
+                        <span class="frame-time">0:48</span>
+                        <div class="frame-description">Robot finds blue and grey trash cans, but not in a classroom, continues.</div>
+                      </div>
+                      <div class="storyboard-frame">
+                        <img src="static/images/storyboard/gates_4th/rgb/01:08.png" alt="Frame 3">
+                        <span class="frame-time">1:08</span>
+                        <!-- <div class="frame-description">Robot choose to explore the detected classroom first.</div> -->
+                         <div class="frame-description">The robot aborts exploring the current room and transits to the classroom.</div>
+                      </div>
+                      <div class="storyboard-frame">
+                        <img src="static/images/storyboard/gates_4th/rgb/01:11.png" alt="Frame 4">
+                        <span class="frame-time">1:11</span>
+                        <div class="frame-description">Robot finds the blue trash can in a classroom, completes.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="video-slide">
+                  <div class="publication-video">
+                    <iframe id="youtube-player-3" src="https://www.youtube.com/embed/A78TSwI78iM?si=FmQ4fJwbFDa8gflg" frameborder="0"
+                      allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                  <!-- Storyboard/Thumbnail Section -->
+                  <div class="video-storyboard">
+                    <div class="storyboard-title">Key Moments <span class="storyboard-subtitle">- Click image to jump • Click 🔍 to zoom</span></div>
+                    <div class="storyboard-frames">
+                      <div class="storyboard-frame">
+                        <img src="static/images/storyboard/gates_5th/rgb/00:07.png" alt="Frame 1">
+                        <span class="frame-time">0:07</span>
+                        <div class="frame-description">Robot finds a microwave oven but not near the fridge, continues.</div>
+                      </div>
+                      <div class="storyboard-frame">
+                        <img src="static/images/storyboard/gates_5th/rgb/00:29.png" alt="Frame 2">
+                        <span class="frame-time">0:29</span>
+                        <div class="frame-description">Robot finds a microwave oven but not near the fridge, continues.</div>
+                      </div>
+                      <div class="storyboard-frame">
+                        <img src="static/images/storyboard/gates_5th/rgb/00:49.png" alt="Frame 3">
+                        <span class="frame-time">0:49</span>
+                        <div class="frame-description">Robot transits to the next room selected by the VLM.</div>
+                      </div>
+                      <div class="storyboard-frame">
+                        <img src="static/images/storyboard/gates_5th/rgb/01:03.png" alt="Frame 4">
+                        <span class="frame-time">1:03</span>
+                        <div class="frame-description">Robot finds a microwave oven near the fridge, completes.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="video-slide">
+                  <div class="publication-video">
+                    <iframe id="youtube-player-4" src="https://www.youtube.com/embed/ImVaNkwoTAo?si=6oHGF2z8MbkGSwk9" frameborder="0"
+                      allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                  <!-- Storyboard/Thumbnail Section -->
+                  <div class="video-storyboard">
+                    <div class="storyboard-title">Key Moments <span class="storyboard-subtitle">- Click image to jump • Click 🔍 to zoom</span></div>
+                    <div class="storyboard-frames">
+                      <div class="storyboard-frame">
+                        <img src="static/images/storyboard/gates_5th/rgb/00:07.png" alt="Frame 1">
+                        <span class="frame-time">0:07</span>
+                        <div class="frame-description">Robot finds a microwave oven but not near the fridge, continues.</div>
+                      </div>
+                      <div class="storyboard-frame">
+                        <img src="static/images/storyboard/gates_5th/rgb/00:29.png" alt="Frame 2">
+                        <span class="frame-time">0:29</span>
+                        <div class="frame-description">Robot finds a microwave oven but not near the fridge, continues.</div>
+                      </div>
+                      <div class="storyboard-frame">
+                        <img src="static/images/storyboard/gates_5th/rgb/00:49.png" alt="Frame 3">
+                        <span class="frame-time">0:49</span>
+                        <div class="frame-description">Robot transits to the next room selected by the VLM.</div>
+                      </div>
+                      <div class="storyboard-frame">
+                        <img src="static/images/storyboard/gates_5th/rgb/01:03.png" alt="Frame 4">
+                        <span class="frame-time">1:03</span>
+                        <div class="frame-description">Robot finds a microwave oven near the fridge, completes.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Navigation arrows -->
+              <button class="carousel-nav carousel-prev" onclick="changeVideoSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="carousel-nav carousel-next" onclick="changeVideoSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+              
+              <!-- Dots indicator -->
+              <div class="carousel-dots">
+                <span class="dot active" onclick="goToVideoSlide(0)"></span>
+                <span class="dot" onclick="goToVideoSlide(1)"></span>
+                <span class="dot" onclick="goToVideoSlide(2)"></span>
+                <span class="dot" onclick="goToVideoSlide(3)"></span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <!--/ Paper video carousel. -->
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered" style="margin-bottom: 2rem;">
+          <img src="static/images/wheel robot.png" alt="Wheeled Robot" style="height: 1.3em; vertical-align: text-bottom; margin-right: 0.3rem; display: inline-block;"> Wheeled Robot: <span style="color: #f39c12; font-weight: 700;">Object Navigation</span>
+        </h2>
+        <p class="has-text-centered" style="margin-top: -1.75rem; margin-bottom: -0.5rem; color: #7a7a7a; font-size: 0.9rem; font-style: italic;">35 demos -  demos - Click any video to view in detail</p>
+        
+        <!-- Gallery Container -->
+        <div class="gallery-container">
+          <div class="gallery-slider" id="gallerySlider">
+            <!-- Page 1: Demos 1-6 -->
+            <div class="gallery-page">
+              <div class="demo-grid-3x2" id="page1"></div>
+            </div>
+            
+            <!-- Page 2: Demos 7-12 -->
+            <div class="gallery-page">
+              <div class="demo-grid-3x2" id="page2"></div>
+            </div>
+            
+            <!-- Page 3: Demos 13-18 -->
+            <div class="gallery-page">
+              <div class="demo-grid-3x2" id="page3"></div>
+            </div>
+            
+            <!-- Page 4: Demos 19-23 + Empty -->
+            <div class="gallery-page">
+              <div class="demo-grid-3x2" id="page4"></div>
+            </div>
+          </div>
+          
+          <!-- Navigation -->
+          <div class="gallery-nav">
+            <button id="prevBtn" onclick="navigateGallery(-1)">
+              <i class="fas fa-chevron-left"></i> Previous
+            </button>
+            <span class="gallery-page-indicator">
+              Page <span id="currentPage">1</span> of 4
+            </span>
+            <button id="nextBtn" onclick="navigateGallery(1)">
+              Next <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Self-attribute Gallery -->
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered" style="margin-bottom: 2rem;">
+          <img src="static/images/wheel robot.png" alt="Wheeled Robot" style="height: 1.3em; vertical-align: text-bottom; margin-right: 0.3rem; display: inline-block;"> Wheeled Robot: <span style="color: #f39c12; font-weight: 700;">Object Navigation</span> with <span style="color: #e74c3c; font-weight: 700;">Self-attribute Condition</span>
+        </h2>
+        <p class="has-text-centered" style="margin-top: -1.75rem; margin-bottom: -0.5rem; color: #7a7a7a; font-size: 0.9rem; font-style: italic;">10 demos - Click any video to view in detail</p>
+        
+        <!-- Gallery Container for Self -->
+        <div class="gallery-container">
+          <div class="gallery-slider" id="gallerySelfSlider">
+            <!-- Page 1: Demos 1-4 (2x2) -->
+            <div class="gallery-page">
+              <div class="demo-grid-2x2" id="selfPage1"></div>
+            </div>
+            
+            <!-- Page 2: Demos 5-8 (2x2) -->
+            <div class="gallery-page">
+              <div class="demo-grid-2x2" id="selfPage2"></div>
+            </div>
+            
+            <!-- Page 3: Demos 9-10 (2x2) -->
+            <div class="gallery-page">
+              <div class="demo-grid-2x2" id="selfPage3"></div>
+            </div>
+          </div>
+          
+          <!-- Navigation -->
+          <div class="gallery-nav">
+            <button id="prevSelfBtn" onclick="navigateSelfGallery(-1)">
+              <i class="fas fa-chevron-left"></i> Previous
+            </button>
+            <span class="gallery-page-indicator">
+              Page <span id="currentSelfPage">1</span> of 3
+            </span>
+            <button id="nextSelfBtn" onclick="navigateSelfGallery(1)">
+              Next <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Spatial Condition Gallery -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered" style="margin-bottom: 2rem;">
+          <img src="static/images/wheel robot.png" alt="Wheeled Robot" style="height: 1.3em; vertical-align: text-bottom; margin-right: 0.3rem; display: inline-block;"> Wheeled Robot: <span style="color: #f39c12; font-weight: 700;">Object Navigation</span> with <span style="color: #3498db; font-weight: 700;">Spatial Condition</span>
+        </h2>
+        <p class="has-text-centered" style="margin-top: -1.75rem; margin-bottom: -0.5rem; color: #7a7a7a; font-size: 0.9rem; font-style: italic;">6 demos - Click any video to view in detail</p>
+        <!-- Gallery Container for Spatial -->
+        <div class="gallery-container">
+          <div class="gallery-slider" id="gallerySpatialSlider">
+            <!-- Single Page: All 6 demos (3x2) -->
+            <div class="gallery-page">
+              <div class="demo-grid-3x2" id="spatialPage1"></div>
+            </div>
+          </div>
+          
+          <!-- No navigation needed for single page -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GO2 Original Gallery -->
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered" style="margin-bottom: 2rem;">
+          <img src="static/images/go2.png" alt="Quadruped" style="height: 1.4em; vertical-align: text-bottom; margin-right: 0.3rem; display: inline-block;"> Quadruped: <span style="color: #f39c12; font-weight: 700;">Object Navigation</span>
+        </h2>
+        <p class="has-text-centered" style="margin-top: -1.75rem; margin-bottom: -0.5rem; color: #7a7a7a; font-size: 0.9rem; font-style: italic;">7 demos - Click any video to view in detail</p>
+        
+        <!-- Gallery Container for Go2 Ori -->
+        <div class="gallery-container">
+          <div class="gallery-slider" id="galleryGo2OriSlider">
+            <!-- Page 1: Demos 1-4 (2x2) -->
+            <div class="gallery-page">
+              <div class="demo-grid-2x2" id="go2OriPage1"></div>
+            </div>
+            
+            <!-- Page 2: Demos 5-7 (2x2) -->
+            <div class="gallery-page">
+              <div class="demo-grid-2x2" id="go2OriPage2"></div>
+            </div>
+          </div>
+          
+          <!-- Navigation -->
+          <div class="gallery-nav">
+            <button id="prevGo2OriBtn" onclick="navigateGo2OriGallery(-1)">
+              <i class="fas fa-chevron-left"></i> Previous
+            </button>
+            <span class="gallery-page-indicator">
+              Page <span id="currentGo2OriPage">1</span> of 2
+            </span>
+            <button id="nextGo2OriBtn" onclick="navigateGo2OriGallery(1)">
+              Next <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GO2 Self-attribute Gallery -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered" style="margin-bottom: 2rem;">
+          <img src="static/images/go2.png" alt="Quadruped" style="height: 1.5em; vertical-align: text-bottom; margin-right: 0.3rem; display: inline-block;"> Quadruped: <span style="color: #f39c12; font-weight: 700;">Object Navigation</span> with <span style="color: #e74c3c; font-weight: 700;">Self-attribute Condition</span>
+        </h2>
+        <p class="has-text-centered" style="margin-top: -1.75rem; margin-bottom: -0.5rem; color: #7a7a7a; font-size: 0.9rem; font-style: italic;">6 demos - Click any video to view in detail</p>
+        
+        <!-- Gallery Container for Go2 Self -->
+        <div class="gallery-container">
+          <div class="gallery-slider" id="galleryGo2SelfSlider">
+            <!-- Page 1: Demos 1-4 (2x2) -->
+            <div class="gallery-page">
+              <div class="demo-grid-2x2" id="go2SelfPage1"></div>
+            </div>
+            
+            <!-- Page 2: Demos 5-6 (2x2) -->
+            <div class="gallery-page">
+              <div class="demo-grid-2x2" id="go2SelfPage2"></div>
+            </div>
+          </div>
+          
+          <!-- Navigation -->
+          <div class="gallery-nav">
+            <button id="prevGo2SelfBtn" onclick="navigateGo2SelfGallery(-1)">
+              <i class="fas fa-chevron-left"></i> Previous
+            </button>
+            <span class="gallery-page-indicator">
+              Page <span id="currentGo2SelfPage">1</span> of 2
+            </span>
+            <button id="nextGo2SelfBtn" onclick="navigateGo2SelfGallery(1)">
+              Next <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GO2 Spatial Condition Gallery -->
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered" style="margin-bottom: 2rem;">
+          <img src="static/images/go2.png" alt="Quadruped" style="height: 1.5em; vertical-align: text-bottom; margin-right: 0.3rem; display: inline-block;"> Quadruped: <span style="color: #f39c12; font-weight: 700;">Object Navigation</span> with <span style="color: #3498db; font-weight: 700;">Spatial Condition</span>
+        </h2>
+        <p class="has-text-centered" style="margin-top: -1.75rem; margin-bottom: -0.5rem; color: #7a7a7a; font-size: 0.9rem; font-style: italic;">5 demos - Click any video to view in detail</p>
+        
+        <!-- Gallery Container for Go2 Spatial -->
+        <div class="gallery-container">
+          <div class="gallery-slider" id="galleryGo2SpatialSlider">
+            <!-- Page 1: Demos 1-4 (2x2) -->
+            <div class="gallery-page">
+              <div class="demo-grid-2x2" id="go2SpatialPage1"></div>
+            </div>
+            
+            <!-- Page 2: Demo 5 only (2x2) -->
+            <div class="gallery-page">
+              <div class="demo-grid-2x2" id="go2SpatialPage2"></div>
+            </div>
+          </div>
+          
+          <!-- Navigation -->
+          <div class="gallery-nav">
+            <button id="prevGo2SpatialBtn" onclick="navigateGo2SpatialGallery(-1)">
+              <i class="fas fa-chevron-left"></i> Previous
+            </button>
+            <span class="gallery-page-indicator">
+              Page <span id="currentGo2SpatialPage">1</span> of 2
+            </span>
+            <button id="nextGo2SpatialBtn" onclick="navigateGo2SpatialGallery(1)">
+              Next <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- G1 Humanoid Original Gallery -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered" style="margin-bottom: 2rem;">
+          <img src="static/images/humannoid.png" alt="Humanoid" style="height: 1.3em; vertical-align: text-bottom; margin-right: 0.3rem; display: inline-block;"> Humanoid: <span style="color: #f39c12; font-weight: 700;">Object Navigation</span>
+        </h2>
+        <p class="has-text-centered" style="margin-top: -1.75rem; margin-bottom: -0.5rem; color: #7a7a7a; font-size: 0.9rem; font-style: italic;">7 demos - Click any video to view in detail</p>
+        
+        <!-- Gallery Container for G1 Ori -->
+        <div class="gallery-container">
+          <div class="gallery-slider" id="galleryG1OriSlider">
+            <!-- Page 1: Demos 1-4 (2x2) -->
+            <div class="gallery-page">
+              <div class="demo-grid-2x2" id="g1OriPage1"></div>
+            </div>
+            
+            <!-- Page 2: Demos 5-7 (2x2) -->
+            <div class="gallery-page">
+              <div class="demo-grid-2x2" id="g1OriPage2"></div>
+            </div>
+          </div>
+          
+          <!-- Navigation -->
+          <div class="gallery-nav">
+            <button id="prevG1OriBtn" onclick="navigateG1OriGallery(-1)">
+              <i class="fas fa-chevron-left"></i> Previous
+            </button>
+            <span class="gallery-page-indicator">
+              Page <span id="currentG1OriPage">1</span> of 2
+            </span>
+            <button id="nextG1OriBtn" onclick="navigateG1OriGallery(1)">
+              Next <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- G1 Self-attribute Gallery -->
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered" style="margin-bottom: 2rem;">
+          <img src="static/images/humannoid.png" alt="Humanoid" style="height: 1.3em; vertical-align: text-bottom; margin-right: 0.3rem; display: inline-block;"> Humanoid: <span style="color: #f39c12; font-weight: 700;">Object Navigation</span> with <span style="color: #e74c3c; font-weight: 700;">Self-attribute Condition</span>
+        </h2>
+        <p class="has-text-centered" style="margin-top: -1.75rem; margin-bottom: -0.5rem; color: #7a7a7a; font-size: 0.9rem; font-style: italic;">5 demos - Click any video to view in detail</p>
+        
+        <!-- Gallery Container for G1 Self -->
+        <div class="gallery-container">
+          <div class="gallery-slider" id="galleryG1SelfSlider">
+            <!-- Page 1: Demos 1-4 (2x2) -->
+            <div class="gallery-page">
+              <div class="demo-grid-2x2" id="g1SelfPage1"></div>
+            </div>
+            
+            <!-- Page 2: Demo 5 (2x2) -->
+            <div class="gallery-page">
+              <div class="demo-grid-2x2" id="g1SelfPage2"></div>
+            </div>
+          </div>
+          
+          <!-- Navigation -->
+          <div class="gallery-nav">
+            <button id="prevG1SelfBtn" onclick="navigateG1SelfGallery(-1)">
+              <i class="fas fa-chevron-left"></i> Previous
+            </button>
+            <span class="gallery-page-indicator">
+              Page <span id="currentG1SelfPage">1</span> of 2
+            </span>
+            <button id="nextG1SelfBtn" onclick="navigateG1SelfGallery(1)">
+              Next <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- G1 Spatial Condition Gallery -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered" style="margin-bottom: 2rem;">
+          <img src="static/images/humannoid.png" alt="Humanoid" style="height: 1.3em; vertical-align: text-bottom; margin-right: 0.3rem; display: inline-block;"> Humanoid: <span style="color: #f39c12; font-weight: 700;">Object Navigation</span> with <span style="color: #3498db; font-weight: 700;">Spatial Condition</span>
+        </h2>
+        <p class="has-text-centered" style="margin-top: -1.75rem; margin-bottom: -0.5rem; color: #7a7a7a; font-size: 0.9rem; font-style: italic;">2 demos - Click any video to view in detail</p>
+        
+        <!-- Gallery Container for G1 Spatial -->
+        <div class="gallery-container">
+          <div class="gallery-slider" id="galleryG1SpatialSlider">
+            <!-- Single Page: Both demos (2x2) -->
+            <div class="gallery-page">
+              <div class="demo-grid-2x2" id="g1SpatialPage1"></div>
+            </div>
+          </div>
+          
+          <!-- No navigation needed for single page -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="video-modal">
+    <span class="modal-close" onclick="closeVideoModal()">&times;</span>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="modalTitle"></h2>
+      </div>
+      <div class="modal-video-pair" id="modalVideoPair">
+        <!-- Videos with individual controls will be inserted here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Lightbox Modal for Storyboard -->
+  <div id="imageLightbox" class="image-lightbox">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <div class="lightbox-content">
+      <img id="lightboxImage" class="lightbox-image" src="" alt="Enlarged view">
+    </div>
+  </div>
+
+
+
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{park2021nerfies,
+        author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+        title     = {Nerfies: Deformable Neural Radiance Fields},
+        journal   = {ICCV},
+        year      = {2021},
+      }</code></pre>
+    </div>
+  </section> -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <!-- <div class="content has-text-centered">
+        <a class="icon-link" href="./static/videos/nerfies_paper.pdf">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div> -->
+      <div class="columns is-desktop is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              This means you are free to borrow the <a href="https://github.com/cmu-vln/cmu-vln.github.io">source
+                code</a> of this website,
+              we just ask that you link back to this page in the footer.
+              Please remember to remove the analytics code included in the header of the website which
+              you do not want on your website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <table class="sub-table" style="width: 400px;height: 200px;" align="center">
+    <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=ILi_ftgj90GH2a2kk6HSJnX3h1jnk981hs-Pv1RDiEI&cl=ffffff&w=a"></script>
+  </table>
+  </tbody>
+  </table> -->
+
+</body>
+
+</html>
