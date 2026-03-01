@@ -14,10 +14,10 @@
   <!-- End Google Tag Manager -->
 
   <meta charset="utf-8">
-  <meta name="description" content="The Official Website for CMU-VLN.">
+  <meta name="description" content="The Official Website for SysNav.">
   <meta name="keywords" content="Vision-Language Navigation, Object Navigation, Embodied AI">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CMU-VLN: The official webpage for Vision-Language Navigation Project in Zhang Lab in CMU.</title>
+  <title>SysNav: The official webpage for SysNav.</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/cmu_ri.png">
+  <link rel="icon" href="./static/images/wheel robot.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -66,12 +66,10 @@
                 <p style="margin: 0;">Contributions</p>
               </div>
               <ul>
-                <li style="text-align: left; margin-bottom: 15px;"><b>We propose a cross-embodiment system—supporting wheeled robots, quadrupeds, and humanoids—that incrementally builds a multi-layer representation of the environment, including room, viewpoint, and object layers, enabling the VLM to make more informed decisions during the object navigation.</b></li>
-                <li style="text-align: left; margin-bottom: 15px;"><b>We design an efficient two-stage navigation policy
-                    based on this representation, combining high-level planning guided by the VLM's reasoning and
-                    low-level exploration with VLM's assistance.</b></li>
-                <li style="text-align: left; margin-bottom: 15px;"><b>Our system not only supports standard object navigation but also enables conditional object navigation—such as navigation conditioned on object attributes or spatial relations—through its multi-layer representation.</b></li>
-                <li style="text-align: left; margin-bottom: 0px;"><b>We conduct extensive real-world evaluations, including three long-range tests spanning an entire building floor and 75 unit tests conducted within multi-room environments (51 on wheeled robots, 18 on quadrupeds and 6 on humannoids).
+                <li style="text-align: left; margin-bottom: 15px;"><b>We propose SysNav, a three-level object navigation system that decouples semantic reasoning, navigation planning, and motion control. This design enables cross-embodiment generalization across wheeled robots, quadrupeds, and humanoids, allowing each component to focus on its respective strengths.</b></li>
+                <li style="text-align: left; margin-bottom: 15px;"><b>We design a hierarchical navigation strategy that treats rooms as minimal decision-making units. The VLM performs high-level semantic reasoning over a structured scene representation for room-level decisions, while efficient classical exploration methods handle in-room navigation, leveraging both VLM's semantic strengths and the spatial structure of indoor environments.</b></li>
+                <li style="text-align: left; margin-bottom: 15px;"><b>Our system not only supports standard object navigation but also enables conditional object navigation—such as navigation conditioned on object attributes or spatial relations—through its structured scene representation.</b></li>
+                <li style="text-align: left; margin-bottom: 0px;"><b>We conduct extensive evaluations including 190 real-world experiments across three robot embodiments, achieving 4-5x improvement in navigation efficiency over existing baselines, and evaluate on four simulation benchmarks (HM3D-v1, HM3D-v2, MP3D, and HM3D-OVON), achieving state-of-the-art performance. To the best of our knowledge, this is the first system capable of reliably and efficiently completing object navigation at building-scale.
                 </b></li>
               </ul>
             </div>
@@ -97,7 +95,7 @@
               <div class="video-slides">
                 <div class="video-slide active">
                   <div class="publication-video">
-                    <iframe id="youtube-player-1" src="https://www.youtube.com/embed/FpF6IATXWds?si=dLfWSKkIdRWqF4bq" frameborder="0"
+                    <iframe id="youtube-player-1" src="https://www.youtube.com/embed/FpF6IATXWds?si=dLfWSKkIdRWqF4bq&enablejsapi=1" frameborder="0"
                       allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </div>
                   <!-- Storyboard/Thumbnail Section -->
@@ -107,7 +105,7 @@
                       <div class="storyboard-frame">
                         <img src="static/images/storyboard/roboloundge/rgb/00:07.png" alt="Frame 1">
                         <span class="frame-time">0:07</span>
-                        <div class="frame-description">Robot finds a refrigerator, but not in a loundge, continues.</div>
+                        <div class="frame-description">Robot finds a refrigerator, but not in a lounge, continues.</div>
                       </div>
                       <div class="storyboard-frame">
                         <img src="static/images/storyboard/roboloundge/rgb/00:21.png" alt="Frame 2">
@@ -122,14 +120,14 @@
                       <div class="storyboard-frame">
                         <img src="static/images/storyboard/roboloundge/rgb/01:18.png" alt="Frame 4">
                         <span class="frame-time">1:18</span>
-                        <div class="frame-description">Robot finds the refrigerator in the loundge, completes.</div>
+                        <div class="frame-description">Robot finds the refrigerator in the lounge, completes.</div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="video-slide">
                   <div class="publication-video">
-                    <iframe id="youtube-player-2" src="https://www.youtube.com/embed/GqRUvwAEqc8?si=FrBSZsPntMdpLs2n" frameborder="0"
+                    <iframe id="youtube-player-2" src="https://www.youtube.com/embed/GqRUvwAEqc8?si=FrBSZsPntMdpLs2n&enablejsapi=1" frameborder="0"
                       allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </div>
                   <!-- Storyboard/Thumbnail Section -->
@@ -162,39 +160,7 @@
                 </div>
                 <div class="video-slide">
                   <div class="publication-video">
-                    <iframe id="youtube-player-3" src="https://www.youtube.com/embed/A78TSwI78iM?si=FmQ4fJwbFDa8gflg" frameborder="0"
-                      allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                  </div>
-                  <!-- Storyboard/Thumbnail Section -->
-                  <div class="video-storyboard">
-                    <div class="storyboard-title">Key Moments <span class="storyboard-subtitle">- Click image to jump • Click 🔍 to zoom</span></div>
-                    <div class="storyboard-frames">
-                      <div class="storyboard-frame">
-                        <img src="static/images/storyboard/gates_5th/rgb/00:07.png" alt="Frame 1">
-                        <span class="frame-time">0:07</span>
-                        <div class="frame-description">Robot finds a microwave oven but not near the fridge, continues.</div>
-                      </div>
-                      <div class="storyboard-frame">
-                        <img src="static/images/storyboard/gates_5th/rgb/00:29.png" alt="Frame 2">
-                        <span class="frame-time">0:29</span>
-                        <div class="frame-description">Robot finds a microwave oven but not near the fridge, continues.</div>
-                      </div>
-                      <div class="storyboard-frame">
-                        <img src="static/images/storyboard/gates_5th/rgb/00:49.png" alt="Frame 3">
-                        <span class="frame-time">0:49</span>
-                        <div class="frame-description">Robot transits to the next room selected by the VLM.</div>
-                      </div>
-                      <div class="storyboard-frame">
-                        <img src="static/images/storyboard/gates_5th/rgb/01:03.png" alt="Frame 4">
-                        <span class="frame-time">1:03</span>
-                        <div class="frame-description">Robot finds a microwave oven near the fridge, completes.</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="video-slide">
-                  <div class="publication-video">
-                    <iframe id="youtube-player-4" src="https://www.youtube.com/embed/ImVaNkwoTAo?si=6oHGF2z8MbkGSwk9" frameborder="0"
+                    <iframe id="youtube-player-3" src="https://www.youtube.com/embed/A78TSwI78iM?si=FmQ4fJwbFDa8gflg&enablejsapi=1" frameborder="0"
                       allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </div>
                   <!-- Storyboard/Thumbnail Section -->
@@ -239,7 +205,6 @@
                 <span class="dot active" onclick="goToVideoSlide(0)"></span>
                 <span class="dot" onclick="goToVideoSlide(1)"></span>
                 <span class="dot" onclick="goToVideoSlide(2)"></span>
-                <span class="dot" onclick="goToVideoSlide(3)"></span>
               </div>
             </div>
             
@@ -250,13 +215,14 @@
     </div>
   </section>
 
+
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
         <h2 class="title is-3 has-text-centered" style="margin-bottom: 2rem;">
           <img src="static/images/wheel robot.png" alt="Wheeled Robot" style="height: 1.3em; vertical-align: text-bottom; margin-right: 0.3rem; display: inline-block;"> Wheeled Robot: <span style="color: #f39c12; font-weight: 700;">Object Navigation</span>
         </h2>
-        <p class="has-text-centered" style="margin-top: -1.75rem; margin-bottom: -0.5rem; color: #7a7a7a; font-size: 0.9rem; font-style: italic;">35 demos -  demos - Click any video to view in detail</p>
+        <p class="has-text-centered" style="margin-top: -1.75rem; margin-bottom: -0.5rem; color: #7a7a7a; font-size: 0.9rem; font-style: italic;">23 demos -  demos - Click any video to view in detail</p>
         
         <!-- Gallery Container -->
         <div class="gallery-container">
@@ -591,6 +557,76 @@
     </div>
   </section>
 
+  <!-- Semi-known Environment Object Navigation -->
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-desktop is-centered has-text-centered">
+          <div class="column" style="max-width: 89%;">
+            <h2 class="title is-3">
+              <img src="static/images/wheel robot.png" alt="Wheeled Robot" style="height: 1.3em; vertical-align: text-bottom; margin-right: 0.3rem; display: inline-block;"> Wheeled Robot: <span style="color: #9b59b6; font-weight: 700;">Semi-known Environment</span> <span style="color: #f39c12; font-weight: 700;">Object Navigation</span>
+            </h2>
+            
+            <div class="publication-video">
+              <iframe id="youtube-player-semi" src="https://www.youtube.com/embed/ImVaNkwoTAo?si=6oHGF2z8MbkGSwk9&enablejsapi=1" frameborder="0"
+                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            
+            <!-- Storyboard/Thumbnail Section -->
+            <div class="video-storyboard">
+              <div class="storyboard-title">Key Moments <span class="storyboard-subtitle">- Click image to jump • Click 🔍 to zoom</span></div>
+              <div class="storyboard-frames">
+                <div class="storyboard-frame">
+                  <img src="static/images/storyboard/cic/rgb/00:10.png" alt="Frame 1">
+                  <span class="frame-time">0:10</span>
+                  <div class="frame-description">Target object is not in the environment during the mapping run.</div>
+                </div>
+                <div class="storyboard-frame">
+                  <img src="static/images/storyboard/cic/rgb/00:21.png" alt="Frame 2">
+                  <span class="frame-time">0:21</span>
+                  <div class="frame-description">Robot completes the mapping run.</div>
+                </div>
+                <div class="storyboard-frame">
+                  <img src="static/images/storyboard/cic/rgb/00:36.png" alt="Frame 3">
+                  <span class="frame-time">0:36</span>
+                  <div class="frame-description">A laptop is put in the meeting room after the mapping run.</div>
+                </div>
+                <div class="storyboard-frame">
+                  <img src="static/images/storyboard/cic/rgb/00:57.png" alt="Frame 4">
+                  <span class="frame-time">0:57</span>
+                  <div class="frame-description">Robot finds a laptop near the desk in the meeting room, completes.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quantitative Results in Real-world and Simulation-->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-desktop is-centered has-text-centered">
+          <div class="column" style="max-width: 39%;">
+            <h2 class="title is-3">Quantitative Results in Real-world</h2>
+            <div class="content" style="display: flex; justify-content: center; align-items: center; min-height: 300px;">
+              <img src="static/images/tables/real_quant.png" alt="Real-world Quantitative Results" style="max-width: 85%; height: auto;">
+            </div>
+          </div>
+          <div class="column" style="max-width: 61%;">
+            <h2 class="title is-3">Quantitative Results in Simulation Benchmarks</h2>
+            <div class="content" style="display: flex; justify-content: center; align-items: center; min-height: 300px;">
+              <img src="static/images/tables/sim_quant.png" alt="Simulation Quantitative Results" style="max-width: 105%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- Video Modal -->
   <div id="videoModal" class="video-modal">
     <span class="modal-close" onclick="closeVideoModal()">&times;</span>
@@ -646,7 +682,7 @@
                 Commons Attribution-ShareAlike 4.0 International License</a>.
             </p>
             <p>
-              This means you are free to borrow the <a href="https://github.com/cmu-vln/cmu-vln.github.io">source
+              This means you are free to borrow the <a href="https://github.com/sysnav-project/sysnav-project.github.io">source
                 code</a> of this website,
               we just ask that you link back to this page in the footer.
               Please remember to remove the analytics code included in the header of the website which
@@ -658,11 +694,6 @@
     </div>
   </footer>
 
-  <!-- <table class="sub-table" style="width: 400px;height: 200px;" align="center">
-    <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=ILi_ftgj90GH2a2kk6HSJnX3h1jnk981hs-Pv1RDiEI&cl=ffffff&w=a"></script>
-  </table>
-  </tbody>
-  </table> -->
 
 </body>
 
